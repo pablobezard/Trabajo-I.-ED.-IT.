@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
     
-    // Agregar un event listener para el botón "Comprar"
+    // "Comprar"
     const comprar = document.getElementById("comprar");
     comprar.addEventListener("click", () => {
         const mensajeCompra = document.getElementById("mensaje-compra");
@@ -51,9 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     function calcularCotizacion(marca, anio, tipo) {
-        let cotizacion = 1000; // Valor de ejemplo
+        let cotizacion = 1000; 
 
-        // Establecer cotizaciones específicas para diferentes marcas o modelos (valores de ejemplo)
+    
         if (marca === "ford") {
             cotizacion = 1200;
         } else if (marca === "chevrolet") {
@@ -74,14 +74,14 @@ document.addEventListener("DOMContentLoaded", () => {
             cotizacion = 1600;
         }
 
-        // Ajustar cotización según el año (valores de ejemplo)
+        // cotización según el año 
         if (anio < 2010) {
             cotizacion -= 200;
         } else if (anio < 2020) {
             cotizacion -= 100;
         }
 
-        // Ajustar cotización según el tipo de seguro (valores de ejemplo)
+        // cotización según el tipo de seguro
         if (tipo === "todo-riesgo") {
             cotizacion *= 1.5;
         }
