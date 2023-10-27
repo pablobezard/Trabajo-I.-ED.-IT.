@@ -7,7 +7,7 @@ body {
 }
 
 .cotizador {
-    background-color: #fff;
+    background-color: #ffffff;
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
@@ -15,9 +15,15 @@ body {
     border-radius: 5px;
 }
 
+h1 {
+    text-align: center;
+    color: #e44d26;
+}
+
 .formulario label {
     display: block;
     margin: 10px 0;
+    color: #333;
 }
 
 .formulario label input[type="radio"] {
@@ -36,7 +42,25 @@ body {
 }
 
 .formulario input[type="radio"] {
-    vertical-align: middle; /* Alinea los radios con el texto */
+    vertical-align: middle;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #e44d26;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c1320d;
 }
 
 #resultado {
@@ -49,8 +73,3 @@ body {
     color: #e44d26;
 }
 
-.radio-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-}

@@ -55,23 +55,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     
         if (marca === "ford") {
-            cotizacion = 1200;
+            cotizacion = 4200;
         } else if (marca === "chevrolet") {
-            cotizacion = 1100;
+            cotizacion = 4100;
         } else if (marca === "toyota") {
-            cotizacion = 1300;
+            cotizacion = 4300;
         } else if (marca === "peugeot") {
-            cotizacion = 1000;
+            cotizacion = 4000;
         } else if (marca === "jeep") {
-            cotizacion = 1400;
+            cotizacion = 4400;
         } else if (marca === "bmw") {
-            cotizacion = 1500;
+            cotizacion = 5500;
         } else if (marca === "renault") {
-            cotizacion = 1050;
+            cotizacion = 3050;
         } else if (marca === "mercedes-benz") {
-            cotizacion = 1700;
+            cotizacion = 9700;
         } else if (marca === "audi") {
-            cotizacion = 1600;
+            cotizacion = 6600;
         }
 
         // cotización según el año 
