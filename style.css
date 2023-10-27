@@ -1,0 +1,56 @@
+/* Estilos CSS para hacerlo más atractivo y responsive */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.cotizador {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.formulario label {
+    display: block;
+    margin: 10px 0;
+}
+
+.formulario label input[type="radio"] {
+    vertical-align: middle;
+}
+
+.formulario select,
+.formulario input[type="text"],
+.formulario input[type="radio"],
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario input[type="radio"] {
+    vertical-align: middle; /* Alinea los radios con el texto */
+}
+
+#resultado {
+    display: none;
+    margin-top: 20px;
+}
+
+#cotizacion {
+    font-weight: bold;
+    color: #e44d26;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}

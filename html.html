@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador de Seguros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cotizador">
+        <h1>Cotizador de Seguros</h1>
+        <div class="formulario">
+            <label for="marca">Marca:</label>
+            <select id="marca">
+                <option value="" disabled selected>Selecciona una marca</option>
+                <option value="ford">Ford</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="toyota">Toyota</option>
+                <option value="peugeot">Peugeot</option>
+                <option value="jeep">Jeep</option>
+                <option value="bmw">BMW</option>
+                <option value="renault">Renault</option>
+                <option value="mercedes-benz">Mercedes-Benz</option>
+                <option value="audi">Audi</option>
+            </select>
+            
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" placeholder="Ej. Fiesta" required>
+
+            <label for="anio">Año:</label>
+            <select id="anio">
+                <option value="" disabled selected>Selecciona el año</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2022">2021</option>
+                <option value="2022">2020</option>
+                <option value="2022">2019</option>
+                <option value="2022">2018</option>
+                <option value="2022">2017</option>
+                <option value="2022">2016</option>
+                <option value="2022">2015</option>
+                <option value="2022">2014</option>
+                <option value="2022">2013</option>
+                <option value="2022">2012</option>
+                <option value="2022">2011</option>
+                <option value="2022">2010</option>
+                <option value="2022">2009</option>
+                <option value="2022">2008</option>
+                <option value="2022">2007</option>
+                <option value="2022">2006</option>
+                <option value="2022">2005</option>
+                <option value="2022">2004</option>
+                <option value="2022">2003</option>
+                <option value="2022">2002</option>
+                <option value="2022">2001</option>
+                <option value="2022">2000</option> 
+                <option value="2022">1999</option>
+                <option value="2022">1998</option>
+                <option value="2022">1997</option>
+                <option value="2022">1996</option>
+                <option value="2022">1995</option>
+                <option value="2022">1994</option>
+                <option value="2022">1993</option>
+            </select>
+            
+            <label>Tipo de seguro:</label>
+            <div class="radio-container">
+                <label for="terceros">Terceros</label>
+                <input type="radio" name="tipo" value="terceros" id="terceros" checked>
+            </div>
+            <div class="radio-container">
+                <label for="todo-riesgo">Todo Riesgo</label>
+                <input type="radio" name="tipo" value="todo-riesgo" id="todo-riesgo">
+            </div>
+            
+            <button id="cotizar">Calcular</button>
+            <button id="comprar">Comprar</button>
+
+            <div id="resultado">
+                <p>Tu cotización es de: <span id="cotizacion"></span> ARS</p>
+                <p id="cotizacionDolarText"> <span id="cotizacionDolar"></span> ARS por USD</p>
+            </div>
+        </div>
+
+        <!-- Mensaje de error oculto -->
+        <div id="mensaje-error" style="display: none; color: red;">
+            Por favor, completa todos los campos.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
